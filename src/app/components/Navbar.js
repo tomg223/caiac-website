@@ -13,151 +13,138 @@ export default function Navbar() {
   };
 
   return (
-    <header className="flex items-center justify-between bg-white px-8 py-3 shadow-sm">
-      {/* LOGO*/}
-      <div className="flex items-center">
-        <Link href="/" className="flex">
-          <img 
-            src="/logo.svg" 
-            alt="Columbia AI Safety"
-            className="h-12 w-auto"
-          />
-        </Link>
-      </div>
-
-      {/* MOBILE NAVIGATION*/}
-      <MobileNavbar />
-
-      {/*DESKTOP NAVIGATION */}
-      <nav className="hidden md:block"> 
-        <ul className="navbar hidden md:flex"> 
-          {/* ABOUT */}
-          <li className={`${isSectionActive(['/', '/about']) ? 'active' : ''}`} >
-            
-            <span>About</span>
-            
-            <ul>
-              <li>
-                <Link href="/" className={isActive("/") ? "underline" : ""}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/about/team" 
-                  className={isActive("/about/team") ? "underline" : ""}
-                >
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/about/mission"
-                  className={isActive("/about/mission") ? "underline" : ""}
-                >
-                  Mission
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/about/donate"
-                  className={isActive("/about/donate") ? "underline" : ""}
-                >
-                  Donate
-                </Link>
-              </li>
-            </ul>
-          </li>
-
-          {/* RESEARCH */}
-          <li>
-            <Link
-              href="/research"
-              className={isActive("/research") ? "underline" : ""}
-            >
-              Research
+    <header className="sticky top-0 z-50 bg-white">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex items-center justify-between h-24"> {/* Increased height */}
+          {/* LOGO */}
+          <div className="flex-shrink-0">
+            <Link href="/" className="flex items-center">
+              <img 
+                src="/logo.svg" 
+                alt="Columbia AI Safety"
+                className="h-16 w-auto" /* Increased logo size */
+              />
             </Link>
-          </li>
+          </div>
 
-          {/* GET INVOLVED */}
-          <li className={`${isSectionActive([ '/get_involved']) ? 'active' : ''}`}>
-            <span>Get Involved</span>
-            <ul>
+          {/* MOBILE NAVIGATION */}
+          <MobileNavbar />
+
+          {/* DESKTOP NAVIGATION */}
+          <nav className="hidden md:block"> 
+            <ul className="flex items-center space-x-12"> {/* Increased spacing */}
+              {/* ABOUT */}
+              <li className="relative group">
+                <span className={`cursor-pointer py-3 text-lg text-gray-600 hover:text-[#023a87] transition-colors ${
+                  isSectionActive(['/', '/about']) ? 'text-[#023a87]' : ''
+                }`}>
+                  About
+                </span>
+                <ul className="absolute left-0 mt-3 w-56 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible 
+                              group-hover:opacity-100 group-hover:visible transition-all duration-200 -translate-y-2 
+                              group-hover:translate-y-0">
+                  <li>
+                    <Link href="/" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/") ? "text-[#023a87]" : ""}`}>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about/team" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/about/team") ? "text-[#023a87]" : ""}`}>
+                      Team
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about/mission" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/about/mission") ? "text-[#023a87]" : ""}`}>
+                      Mission
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              {/* RESEARCH */}
               <li>
-                <Link
-                  href="/get_involved/technical-fellowship"
-                  className={isActive("/get_involved/technical-fellowship") ? "underline" : ""}
-                >
-                  Technical Fellowship
+                <Link href="/research" className={`py-3 text-lg text-gray-600 hover:text-[#023a87] transition-colors
+                  ${isActive("/research") ? "text-[#023a87]" : ""}`}>
+                  Research
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/get_involved/policy-fellowship"
-                  className={isActive("/get_involved/policy-fellowship") ? "underline" : ""}
-                >
-                  Policy Fellowship
-                </Link>
+
+              {/* GET INVOLVED */}
+              <li className="relative group">
+                <span className={`cursor-pointer py-3 text-lg text-gray-600 hover:text-[#023a87] transition-colors ${
+                  isSectionActive(['/get_involved']) ? 'text-[#023a87]' : ''
+                }`}>
+                  Get Involved
+                </span>
+                <ul className="absolute left-0 mt-3 w-64 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible 
+                              group-hover:opacity-100 group-hover:visible transition-all duration-200 -translate-y-2 
+                              group-hover:translate-y-0">
+                  <li>
+                    <Link href="/get_involved/technical-fellowship" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/get_involved/technical-fellowship") ? "text-[#023a87]" : ""}`}>
+                      AISF Fellowship
+                    </Link>
+                  </li>
+                  {/* 
+                  <li>
+                    <Link href="/get_involved/policy-fellowship" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/get_involved/policy-fellowship") ? "text-[#023a87]" : ""}`}>
+                      Policy Fellowship
+                    </Link>
+                  </li>
+                  */}
+                  <li>
+                    <Link href="/get_involved/workshops" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/get_involved/workshops") ? "text-[#023a87]" : ""}`}>
+                      Research Groups
+                    </Link>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <Link
-                  href="/get_involved/workshops"
-                  className={isActive("/get_involved/workshops") ? "underline" : ""}
-                >
-                  Workshops
-                </Link>
+
+              {/* RESOURCES */}
+              <li className="relative group">
+                <span className={`cursor-pointer py-3 text-lg text-gray-600 hover:text-[#023a87] transition-colors ${
+                  isSectionActive(['/resources']) ? 'text-[#023a87]' : ''
+                }`}>
+                  Resources
+                </span>
+                <ul className="absolute right-0 mt-3 w-64 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible 
+                              group-hover:opacity-100 group-hover:visible transition-all duration-200 -translate-y-2 
+                              group-hover:translate-y-0">
+                  <li>
+                    <Link href="/resources/technical-papers" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/resources/technical-papers") ? "text-[#023a87]" : ""}`}>
+                      Technical Papers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/resources/policy-papers" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/resources/policy-papers") ? "text-[#023a87]" : ""}`}>
+                      Policy Papers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/resources/non-technical-intro" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/resources/non-technical-intro") ? "text-[#023a87]" : ""}`}>
+                      Non-Technical Intro
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/resources/many-other-resources" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/resources/many-other-resources") ? "text-[#023a87]" : ""}`}>
+                      Many Other Resources
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </li>
-
-          {/* RESOURCES */}
-          <li className={`${isSectionActive([ '/resources']) ? 'active' : ''}`}>
-            <span>Resources</span>
-            <ul>
-              <li>
-                <Link
-                  href="/resources/technical-papers"
-                  className={isActive("/resources/technical-papers") ? "underline" : ""}
-                >
-                  Technical Papers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/policy-papers"
-                  className={isActive("/resources/policy-papers") ? "underline" : ""}
-                >
-                  Policy Papers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/non-technical-intro"
-                  className={isActive("/resources/non-technical-intro") ? "underline" : ""}
-                >
-                  Non-Technical Intro
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/many-other-resources"
-                  className={isActive("/resources/many-other-resources") ? "underline" : ""}
-                >
-                  Many Other Resources
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/blog"
-                  className={isActive("/resources/blog") ? "underline" : ""}
-                >
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+          </nav>
+        </div>
+      </div>
     </header>
   );
 }

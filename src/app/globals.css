@@ -11,21 +11,55 @@
 /* app/globals.css */
 
 :root {
-  --columbia-blue: #A3D9EA;
-  --white: #ffffff;
-  --black: #000000;
-  --text-color: #333333;
-  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --columbia-blue: #023a87;     /* Primary dark blue */
+  --columbia-light: #A3D9EA;    /* Light blue for links */
 }
+/* Add to globals.css */
+
+
 h1 {
-  font-size: 3rem;      
+  font-size: 2.25rem;  /* 36px */
+  font-weight: 300;    /* light */
+  letter-spacing: 0.025em;
+  margin-bottom: 2rem;
   color: var(--columbia-blue);
-  margin: 1rem 0;
+}
+
+p {
+  color: rgb(31, 41, 55);  /* gray-800 */
+  font-size: 1.125rem;     /* 18px */
+  line-height: 1.75;       /* relaxed */
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--columbia-light);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* For superscript links */
+a.super {
+  font-size: 0.875rem;  /* 14px */
+  vertical-align: super;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* For superscript links */
+a.super {
+  font-size: 0.875rem;  /* 14px */
+  vertical-align: super;
 }
 
 *{
   box-sizing: border-box;
 }
+
 
 html,body {
   margin: 0;

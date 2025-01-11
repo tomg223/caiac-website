@@ -1,6 +1,7 @@
 // app/layout.js
 import "./globals.css"; // optional global CSS
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Columbia AI Safety",
@@ -15,7 +16,10 @@ export default function RootLayout({ children }) {
         <main style={{ padding: "2rem" }}>
           {children}
         </main>
+        
       </body>
+      <Footer></Footer>
     </html>
+    
   );
 }
