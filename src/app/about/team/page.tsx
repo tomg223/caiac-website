@@ -1,4 +1,3 @@
-// pages/about/team.tsx
 export default function TeamPage() {
   const teamMembers = [
     {
@@ -46,7 +45,7 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-8 py-16">
-        {/* Header */}
+        {/*Header*/}
         <h1 className="text-[#023a87] text-5xl font-light text-center mb-4">
           Our Team
         </h1>
@@ -54,11 +53,10 @@ export default function TeamPage() {
         <p className="text-center text-gray-600 italic mb-16">
         </p>
 
-        {/* Team Grid */}
+        {/*Team Grid*/}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center text-center group">
-              {/* Image Container */}
               <div className="mb-6 rounded-full overflow-hidden w-56 h-56 shadow-md">
                 <img
                   src={member.image}
@@ -67,12 +65,10 @@ export default function TeamPage() {
                 />
               </div>
               
-              {/* Name with Executive Indicator */}
               <h3 className="text-2xl text-[#023a87] font-light mb-2">
                 {member.name}
               </h3>
               
-              {/* Title */}
               <p className="text-gray-600 text-lg font-light italic">
                 {member.title}
               </p>
