@@ -55,12 +55,14 @@ export default function Navbar() {
                       Team
                     </Link>
                   </li>
+                  {/*
                   <li>
                     <Link href="/about/mission" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
                       ${isActive("/about/mission") ? "text-[#023a87]" : ""}`}>
                       Mission
                     </Link>
                   </li>
+                  * */}
                 </ul>
               </li>
 
@@ -85,61 +87,31 @@ export default function Navbar() {
                   <li>
                     <Link href="/get_involved/technical-fellowship" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
                       ${isActive("/get_involved/technical-fellowship") ? "text-[#023a87]" : ""}`}>
-                      AISF Fellowship
+                      Technical Fellowship
                     </Link>
                   </li>
-                  {/* 
+                  
                   <li>
                     <Link href="/get_involved/policy-fellowship" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
                       ${isActive("/get_involved/policy-fellowship") ? "text-[#023a87]" : ""}`}>
                       Policy Fellowship
                     </Link>
                   </li>
-                  */}
+                  
                   <li>
-                    <Link href="/get_involved/workshops" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
-                      ${isActive("/get_involved/workshops") ? "text-[#023a87]" : ""}`}>
+                    <Link href="/get_involved/research-groups" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
+                      ${isActive("/get_involved/research-groups") ? "text-[#023a87]" : ""}`}>
                       Research Groups
                     </Link>
                   </li>
                 </ul>
               </li>
 
-              {/* RESOURCES */}
-              <li className="relative group">
-                <span className={`cursor-pointer py-3 text-lg text-gray-600 hover:text-[#023a87] transition-colors ${
-                  isSectionActive(['/resources']) ? 'text-[#023a87]' : ''
-                }`}>
-                  Resources
-                </span>
-                <ul className="absolute right-0 mt-3 w-64 bg-white rounded-lg shadow-lg py-2 opacity-0 invisible 
-                              group-hover:opacity-100 group-hover:visible transition-all duration-200 -translate-y-2 
-                              group-hover:translate-y-0">
-                  <li>
-                    <Link href="/resources/technical-papers" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
-                      ${isActive("/resources/technical-papers") ? "text-[#023a87]" : ""}`}>
-                      Technical Papers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/resources/policy-papers" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
-                      ${isActive("/resources/policy-papers") ? "text-[#023a87]" : ""}`}>
-                      Policy Papers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/resources/non-technical-intro" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
-                      ${isActive("/resources/non-technical-intro") ? "text-[#023a87]" : ""}`}>
-                      Non-Technical Intro
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/resources/many-other-resources" className={`block px-6 py-3 text-base text-gray-700 hover:bg-gray-50 
-                      ${isActive("/resources/many-other-resources") ? "text-[#023a87]" : ""}`}>
-                      Many Other Resources
-                    </Link>
-                  </li>
-                </ul>
+              <li>
+                <Link href="/blog" className={`py-3 text-lg text-gray-600 hover:text-[#023a87] transition-colors
+                  ${isActive("/blog") ? "text-[#023a87]" : ""}`}>
+                  Blog
+                </Link>
               </li>
             </ul>
           </nav>

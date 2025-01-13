@@ -8,13 +8,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* app/globals.css */
 
 :root {
-  --columbia-blue: #023a87;     /* Primary dark blue */
-  --columbia-light: #A3D9EA;    /* Light blue for links */
+  --columbia-blue: #023a87;     
+  --columbia-light: #A3D9EA;  
 }
-/* Add to globals.css */
 
 
 h1 {
@@ -40,9 +38,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* For superscript links */
 a.super {
-  font-size: 0.875rem;  /* 14px */
+  font-size: 0.875rem;  
   vertical-align: super;
 }
 
@@ -50,9 +47,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* For superscript links */
 a.super {
-  font-size: 0.875rem;  /* 14px */
+  font-size: 0.875rem;  
   vertical-align: super;
 }
 
