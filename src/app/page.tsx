@@ -8,9 +8,9 @@ export default function Home() {
           <h1 className="text-4xl font-light tracking-tight text-[#023a87] sm:text-6xl">
               Columbia AI Alignment Club
             </h1>
-            <h1 className="text-4xl font-light tracking-tight text-[#023a87] sm:text-6xl">
+            <h2 className="text-4xl font-light tracking-tight text-[#023a87] sm:text-6xl">
               Research by Columbia students on catastrophic risks from advanced AI
-            </h1>
+            </h2>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="https://forms.gle/fa2dFsV5W8VSDvoT8"
@@ -38,7 +38,7 @@ export default function Home() {
 
             </p>
             <p className="text-lg leading-relaxed text-gray-600">
-            We also run a semester-long introductory reading group on AI safety, including both a <a href="/get_involved/technical-fellowship" className="text-[#A3D9EA] hover:underline">technical machine learning track</a>,   and a <a href="/get_involved/policy-fellowship" className="text-[#A3D9EA] hover:underline">policy track</a>.
+            We also run a semester-long introductory reading group on AI safety, including both a <a href="/get_involved/technical-fellowship" className="text-[#4A8A99] hover:underline">technical machine learning track</a>,   and a <a href="/get_involved/policy-fellowship" className="text-[#4A8A99] hover:underline">policy track</a>.
 
             </p>
           
@@ -49,8 +49,8 @@ export default function Home() {
           {/* CTA Section */}
           <div className="mt-24">
             <a
-              href="https://forms.gle/rXCzHmk3FeYBGHMLA"
-              className="group inline-flex items-center gap-x-2 text-base font-semibold text-[#023a87] hover:text-[#A3D9EA] transition-colors"
+              href="https://forms.gle/fa2dFsV5W8VSDvoT8"
+              className="group inline-flex items-center gap-x-2 text-base font-semibold text-[#023a87] hover:text-[#4A8A99] transition-colors"
             >
               Join our mailing list
               <span aria-hidden="true" className="block transition-transform group-hover:translate-x-1">→</span>

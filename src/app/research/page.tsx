@@ -1,46 +1,50 @@
 const researchEntries = [
   {
-    title: "Obfuscated Activations Bypass LLM Latent-Space Defenses",
+    title: "Estimating the Hallucination Rate of Generative AI",
     authors: [
-      { name: "Luke Bailey", isPI: true },
-      { name: "Alex Serrano" },
-      { name: "Abhay Sheshadri" },
-      { name: "Mikhail Seleznyov" },
-      { name: "Jordan Taylor" },
-      { name: "Erik Jenner" },
-      { name: "Jacob Hilton" },
-      { name: "Stephen Casper" },
-      { name: "Carlos Guestrin" },
-      { name: "Scott Emmons" }
+      { name: "Andrew Jesson" },
+      { name: "Nicolas Beltran-Velez" },
+      { name: "Quentin Chu" },
+      { name: "Sweta Karlekar", isPI: true },
+      { name: "Jannik Kossen" },
+      { name: "Yarin Gal" },
+      { name: "John P. Cunningham" },
+      { name: "David Blei" }
     ],
-    date: "December 12, 2024",
-    link: "https://arxiv.org/abs/2412.01784"
+    date: "December 8, 2024",
+    link: "https://arxiv.org/abs/2406.07457"
   },
   {
-    title: "Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models",
+    title: "Adaptive Contextual Perception: How to Generalize to New Backgrounds and Ambiguous Objects",
     authors: [
-      { name: "Cameron Tice" },
-      { name: "Philipp Alexander Kreer" },
-      { name: "Nathan Helm-Burger" },
-      { name: "Prithviraj Singh Shahani", isPI: true },
-      { name: "Fedor Ryzhenko" },
-      { name: "Jacob Haimes" },
-      { name: "Felix Hofstätter" },
-      { name: "Teun van der Weij" }
+      { name: "Zhuofan Ying", isPI: true },
+      { name: "Peter Hase" },
+      { name: "Mohit Bansal" }
     ],
     date: "December 2, 2024",
-    link: "#"
+    link: "https://arxiv.org/abs/2306.05963v2"
   },
   {
-    title: "Competition Dynamics Shape Algorithmic Phases of In-Context Learning",
+    title: "Multimodal Multi-loss Fusion Network for Sentiment Analysis",
     authors: [
-      { name: "Core Francisco Park", isPI: true },
-      { name: "Ekdeep Singh Lubana", isPI: true },
-      { name: "Itamar Pres" },
-      { name: "Hidenori Tanaka" }
+      { name: "Zehui Wu" },
+      { name: "Ziwei Gong", isPI: true },
+      { name: "Jaywon Koo" },
+      { name: "Julia Hirschberg" }
     ],
-    date: "December 1, 2024",
-    link: "#"
+    date: "June 2, 2024",
+    link: "https://arxiv.org/abs/2308.00264"
+  },
+  {
+    title: "Generalization Analogies (genies): A Testbed for Generalizing AI Oversight to Hard-to-Measure Domains",
+    authors: [
+      { name: "Joshua Clymer" },
+      { name: "Garrett Baker" },
+      { name: "Rohan Subramani", isPI: true },
+      { name: "Sam Wang" }
+    ],
+    date: "November 13, 2023",
+    link: "https://scholar.google.com/citations?user=O-qEYjUAAAAJ&hl=en"
   }
 ];
 

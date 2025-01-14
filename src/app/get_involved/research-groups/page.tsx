@@ -13,7 +13,7 @@ export default function ResearchGroupsPage() {
         <p className="text-lg">
         Express interest <a 
             href="#"
-            className="text-[#A3D9EA] hover:underline font-bold"
+            className="text-[#4A8A99] hover:underline font-bold"
             target="_blank"
             rel="noopener noreferrer"
           >here

@@ -59,8 +59,10 @@ export default function PolicyFellowshipPage() {
       question: "What if I already know all the material in the curriculum?",
       answer: (
         <>
-          If you've already read all the material in the curriculum, you may be interested in attending our{" "}
-          <Link href="/get_involved/research-groups" className="text-[#A3D9EA] hover:underline">
+          If you've already read all the material in the <Link href="https://docs.google.com/document/d/14gOLPczbGpESK2iae1dii0aVCAMIKnCb4pIp6bLkaeg/edit?usp=sharing" className="text-[#4A8A99] hover:underline">
+            curriculum
+          </Link>, you may be interested in attending our{" "}
+          <Link href="/get_involved/research-groups" className="text-[#4A8A99] hover:underline">
             research groups
           </Link>. Feel free to email us at yw3809@columbia.edu to discuss other ways of getting involved with CAIAC!
         </>
@@ -86,8 +88,8 @@ export default function PolicyFellowshipPage() {
 
         <ul className="list-disc pl-8 space-y-2 text-gray-800 text-lg leading-relaxed">
           <li>How much <a 
-            href="https://docs.google.com/document/d/14gOLPczbGpESK2iae1dii0aVCAMIKnCb4pIp6bLkaeg/edit?usp=sharing" 
-            className="text-[#A3D9EA] hover:underline"
+            href="https://bounded-regret.ghost.io/what-will-gpt-2030-look-like/" 
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -95,21 +97,21 @@ export default function PolicyFellowshipPage() {
           </a> should we expect over the next few years?</li>
           <li>What are the <a 
             href="https://arxiv.org/abs/2306.12001" 
-            className="text-[#A3D9EA] hover:underline"
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             risks
           </a> associated with the <a 
             href="https://www.nti.org/analysis/articles/the-convergence-of-artificial-intelligence-and-the-life-sciences/" 
-            className="text-[#A3D9EA] hover:underline"
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             misuse
           </a> and <a 
             href="https://www.alignmentforum.org/posts/pRkFkzwKZ2zfa3R6H/without-specific-countermeasures-the-easiest-path-to" 
-            className="text-[#A3D9EA] hover:underline"
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -117,7 +119,7 @@ export default function PolicyFellowshipPage() {
           </a> of advanced AI systems?</li>
           <li>How can regulators <a 
             href="https://arxiv.org/abs/2305.15324" 
-            className="text-[#A3D9EA] hover:underline"
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -125,7 +127,7 @@ export default function PolicyFellowshipPage() {
           </a> frontier AI systems for potentially dangerous capabilities?</li>
           <li>How could novel hardware mechanisms <a 
             href="https://www.cnas.org/publications/reports/secure-governable-chips" 
-            className="text-[#A3D9EA] hover:underline"
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -140,7 +142,7 @@ export default function PolicyFellowshipPage() {
         <p className="text-lg italic">
           See <a 
             href="https://docs.google.com/document/d/14gOLPczbGpESK2iae1dii0aVCAMIKnCb4pIp6bLkaeg/edit?usp=sharing" 
-            className="text-[#A3D9EA] hover:underline"
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -150,17 +152,16 @@ export default function PolicyFellowshipPage() {
 
         <p className="text-gray-800 text-lg leading-relaxed">
           <strong>Applications for the Spring 2025 fellowship will open in late January. </strong>
-          <a 
+          Express interest <a 
             href="#"
-            className="text-[#A3D9EA] hover:underline"
-          >
-            Express interest here
+            className="text-[#4A8A99] hover:underline"
+          >here
           </a>.
         </p>
 
         <p className="text-gray-800 text-lg leading-relaxed">
           For those interested in the technical side of AI safety, we recommend applying to our{" "}
-          <Link href="/get_involved/technical-fellowship" className="text-[#A3D9EA] hover:underline">
+          <Link href="/get_involved/technical-fellowship" className="text-[#4A8A99] hover:underline">
             introductory technical fellowship
           </Link>. It is possible to participate in both programs.
         </p>

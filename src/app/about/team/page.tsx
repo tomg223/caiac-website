@@ -3,12 +3,12 @@ export default function TeamPage() {
     {
       name: "Yau-Meng Wong",
       title: "Director",
-      image: "/team/yaumengwong.jpg",
+      image: "/team/yaumengwong.png",
     },
     {
       name: "Thomas Gansa",
-      title: "Deputy Director",
-      image: "/team/hillel-ehrenreich.jpg",
+      title: "Communications Lead",
+      image: "/team/thomasgansa.png",
     },
     {
       name: "Rohan Subrmani",

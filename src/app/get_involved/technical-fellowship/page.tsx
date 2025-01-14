@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link'
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
   return (
@@ -56,7 +57,16 @@ export default function TechnicalFellowshipPage() {
     },
     {
       question: "What if I already know all the material in the curriculum?",
-      answer: "If you've already read all the material in the curriculum, you may be interested in joining one of our research groups [include link to research groups page here]. Feel free to email us at yw3809@columbia.edu to discuss other ways of getting involved with CAIAC!"
+      answer: (
+        <>
+          If you've already read all the material in the <Link href="https://docs.google.com/document/d/14gOLPczbGpESK2iae1dii0aVCAMIKnCb4pIp6bLkaeg/edit?usp=sharing" className="text-[#4A8A99] hover:underline">
+            curriculum
+          </Link>, you may be interested in attending our{" "}
+          <Link href="/get_involved/research-groups" className="text-[#4A8A99] hover:underline">
+            research groups
+          </Link>. Feel free to email us at yw3809@columbia.edu to discuss other ways of getting involved with CAIAC!
+        </>
+      )
     },
     {
       question: "Who facilitates the fellowship?",
@@ -72,28 +82,28 @@ export default function TechnicalFellowshipPage() {
           Every semester and summer, CAIAC runs an 8-week introductory reading group on AI safety, covering topics like neural network interpretability
           <a 
             href="https://distill.pub/2020/circuits/zoom-in/" 
-            className="text-[#A3D9EA] hover:underline align-super text-sm"
+            className="text-[#4A8A99] hover:underline align-super text-sm"
             target="_blank"
             rel="noopener noreferrer"
           >¹</a>
           , learning from human feedback
           <a 
             href="https://arxiv.org/abs/2009.01325" 
-            className="text-[#A3D9EA] hover:underline align-super text-sm"
+            className="text-[#4A8A99] hover:underline align-super text-sm"
             target="_blank"
             rel="noopener noreferrer"
           >²</a>
           , goal misgeneralization in reinforcement learning agents
           <a 
             href="https://arxiv.org/abs/2105.14111" 
-            className="text-[#A3D9EA] hover:underline align-super text-sm"
+            className="text-[#4A8A99] hover:underline align-super text-sm"
             target="_blank"
             rel="noopener noreferrer"
           >³</a>
           , and eliciting latent knowledge
           <a 
             href="https://arxiv.org/abs/2212.03827" 
-            className="text-[#A3D9EA] hover:underline align-super text-sm"
+            className="text-[#4A8A99] hover:underline align-super text-sm"
             target="_blank"
             rel="noopener noreferrer"
           >⁴</a>
@@ -103,7 +113,7 @@ export default function TechnicalFellowshipPage() {
         <p className="text-lg">
           See <a 
             href="https://docs.google.com/document/d/1gDIPzQ6b8LcJhfrag_Gy9ca6ziB4fYfKu-zMR6qYeiE/edit?usp=sharing" 
-            className="text-[#A3D9EA] hover:underline"
+            className="text-[#4A8A99] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
